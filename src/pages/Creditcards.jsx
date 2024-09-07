@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './CreditCards.css';
 
 const CreditCards = () => {
   const [cards] = useState([

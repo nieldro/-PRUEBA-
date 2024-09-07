@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Privileges.css';
 
 const Privileges = () => {
   const [privileges, setPrivileges] = useState({

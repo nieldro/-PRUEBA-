@@ -1,5 +1,4 @@
 import React from "react";
-import './Profile.css'; // Importamos el CSS
 
 const Profile = ({ email, password }) => {
   return (
@@ -10,7 +9,7 @@ const Profile = ({ email, password }) => {
         <p>Email: {email}</p>
         <p>Contraseña: {password}</p>
       </div>
-      <button className="profile-edit-btn">Editar Perfil</button> {/* Botón de editar */}
+      <a href="/settings" className="profile-edit-btn">Editar Perfil</a> {/* Botón de editar */}
     </div>
   );
 };

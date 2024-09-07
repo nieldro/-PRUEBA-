@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Services.css';
 
 const Services = () => {
   const [service, setService] = useState('');

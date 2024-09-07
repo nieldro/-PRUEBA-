@@ -4,7 +4,6 @@ import { Doughnut, Bar } from "react-chartjs-2";
 import Navbar from "../components/Navbar.jsx";
 import { AppContext } from "./AppContext.jsx";
 import { FaArrowUp, FaArrowDown } from "react-icons/fa";
-import "./Home.css";
 
 // Registrar los elementos de Chart.js
 ChartJS.register(ArcElement, CategoryScale, LinearScale, BarElement, Tooltip, Legend);

@@ -180,3 +180,9 @@
   font-size: 18px;
   margin-bottom: 10px;
 }
+
+@media(max-width: 780px){
+  .charts-section{
+    flex-direction: column;
+  }
+}

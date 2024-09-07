@@ -1,4 +1,3 @@
-/* Animación de fade-in */
 @keyframes fadeIn {
     from {
       opacity: 0;
@@ -9,56 +8,54 @@
   }
   
   /* Animación del botón al hacer hover */
-  @keyframes buttonPulse {
+  @keyframes buttonGlow {
     from {
-      transform: scale(1);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
     to {
-      transform: scale(1.05);
       box-shadow: 0 4px 15px rgba(0, 123, 255, 0.6);
     }
   }
   
   /* Contenedor principal */
-  .loans-container {
+  .services-container {
     padding: 20px;
     margin: 0 auto;
     max-width: 600px;
-    background-color: #f9f9f9;
-    min-height: 100vh;
+    background-color: #f0f4f8;
     animation: fadeIn 1s ease-in-out;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   /* Título principal */
-  .loans-container h1 {
+  .services-container h1 {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
   }
   
-  /* Inputs estilizados */
-  .loans-container input[type="number"] {
+  /* Select */
+  .service-select {
     width: 100%;
     padding: 10px;
     font-size: 1.1em;
-    margin: 10px 0;
     border: 2px solid #007bff;
     border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
     transition: border-color 0.3s ease;
   }
   
-  .loans-container input[type="number"]:hover {
+  .service-select:hover {
     border-color: #0056b3;
   }
   
-  /* Botón de calcular */
-  .loans-container button {
+  /* Botón de solicitar servicio */
+  .service-button {
     padding: 12px 20px;
     font-size: 1.2em;
-    color: #fff;
+    color: #ffffff;
     background-color: #007bff;
     border: none;
     border-radius: 5px;
@@ -66,28 +63,24 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
-  .loans-container button:hover {
+  .service-button:hover {
     background-color: #0056b3;
-    animation: buttonPulse 0.5s infinite alternate;
+    transform: scale(1.05);
+    animation: buttonGlow 0.5s infinite alternate;
   }
   
-  .loans-container button:active {
+  .service-button:active {
     transform: scale(0.98);
   }
   
-  /* Estilo del pago mensual */
-  .loans-container p {
-    font-size: 1.5em;
+  /* Mensaje de alerta visual */
+  .alert-message {
+    padding: 10px;
+    background-color: #62ec11;
+    color: #054610;
+    border-radius: 5px;
     margin-top: 20px;
-    color: #28a745;
-    font-weight: bold;
+    text-align: center;
   }
   
-  /* Etiquetas de formulario */
-  .loans-container label {
-    font-size: 1.1em;
-    color: #333;
-    margin-bottom: 10px;
-    display: block;
-  }
   

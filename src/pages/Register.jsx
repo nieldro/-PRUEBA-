@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router-dom';
-import './Register.css';
 
 const Register = ({ history }) => {
     const [email, setEmail] = useState('');
@@ -40,7 +39,7 @@ const Register = ({ history }) => {
         localStorage.setItem('users', JSON.stringify(users));
 
         alert('Registro exitoso.');
-        history.push('/home'); // Redireccionar a la página de inicio de sesión después del registro.
+        history.push('/'); // Redireccionar a la página de inicio de sesión después del registro.
     };
 
     return (

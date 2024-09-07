@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import './Loans.css';
 
 const Loans = () => {
   const [amount, setAmount] = useState(0);

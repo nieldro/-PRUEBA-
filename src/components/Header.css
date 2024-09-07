@@ -47,8 +47,6 @@
   }
   
   .profile-image {
-    width: 40px;
-    height: 40px;
     border-radius: 50%;
     object-fit: cover;
     cursor: pointer;
@@ -69,6 +67,7 @@
     transition: opacity 0.3s ease, transform 0.3s ease;
     visibility: hidden;
     z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+    min-width: 300px;
   }
   
   .dropdown-menu.show {
@@ -89,6 +88,11 @@
     color: #000;
     transition: background-color 0.2s ease;
   }
+  .dropdown-menu li a{
+   text-decoration: none;
+   color: #007bff;
+  }
+  
   
   .dropdown-menu li:hover {
     background-color: #f0f0f0;

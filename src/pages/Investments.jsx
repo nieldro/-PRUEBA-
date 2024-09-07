@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Chart, Line } from 'react-chartjs-2';
 import 'chart.js/auto';
-import './Investments.css'; // Asegúrate de importar el CSS
 
 const Investments = () => {
   const [balance, setBalance] = useState(10000);

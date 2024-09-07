@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Settings.css';
+
 
 const Settings = () => {
     // Recuperar el usuario actual desde localStorage

@@ -16,10 +16,8 @@ body {
     position: relative;
     z-index: 0;
     margin: 4rem auto 0;
-    padding: 5rem 4rem 0 4rem;
     width: 100%;
     max-width: 525px;
-    min-height: 680px;
     background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/283591/login-background.jpg);
     box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.85);
 }
@@ -40,14 +38,19 @@ body {
 .form-register {
     position: relative;
     z-index: 1;
-    padding-bottom: 4.5rem;
+    padding-bottom: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .register-nav {
     position: relative;
     padding: 0;
-    margin: 0 0 6em 1rem;
+    /*margin: 0 0 6em 1rem;*/
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff73;
+    padding: 0 20px 10px 20px;
 }
 
 .register-nav__item {
@@ -61,7 +64,7 @@ body {
 
 .register-nav__item a {
     position: relative;
-    color: rgba(255, 255, 255, 0.5);
+    color: white;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -80,7 +83,7 @@ body {
     content: '';
     display: inline-block;
     height: 10px;
-    background-color: rgb(255, 255, 255);
+    /*background-color: rgb(255, 255, 255);*/
     position: absolute;
     right: 100%;
     bottom: -1px;
@@ -92,27 +95,27 @@ body {
 .register-nav__item a:hover:after,
 .register-nav__item.active a:after {
     background-color: rgb(17, 97, 237);
-    height: 2px;
+    height: 4px;
     right: 0;
-    bottom: 2px;
+    bottom: -4px;
     border-radius: 0;
     transition: .20s all ease;
 }
 
 .register__label {
     display: block;
-    padding-left: 1rem;
+    
 }
 
 .register__label {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: .75rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5px;
 }
 
 .register__input {
-    color: white;
+    /*color: white;*/
     font-size: 1.15rem;
     width: 100%;
     padding: .5rem 1rem;
@@ -140,7 +143,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     padding: .75rem;
     border-radius: 2rem;
     display: block;

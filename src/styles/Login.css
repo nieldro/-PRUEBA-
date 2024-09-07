@@ -19,7 +19,6 @@ body {
   padding: 5rem 4rem 0 4rem;
 	width: 100%;
 	max-width: 525px;
-	min-height: 680px;
 	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/283591/login-background.jpg);
 	box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.85);
 }
@@ -47,7 +46,11 @@ body {
 .login-nav {
 	position: relative;
 	padding: 0;
-	margin: 0 0 6em 1rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px 10px 20px;
+	border-bottom: 1px solid #ffffff4f;
+	/*margin: 0 0 6em 1rem;*/
 }
 
 .login-nav__item {
@@ -61,7 +64,7 @@ body {
 
 .login-nav__item a {
 	position: relative;
-	color: rgba(255, 255, 255, 0.5);
+	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-weight: 500;
@@ -79,11 +82,11 @@ body {
 .login-nav__item a:after {
 	content: '';
   display: inline-block;
-  height: 10px;
+  height: 4px;
   background-color: rgb(255, 255, 255);
   position: absolute;
   right: 100%;
-  bottom: -1px;
+  bottom: -4px;
   left: 0;
   border-radius: 50%;
   transition: .15s all ease;
@@ -92,23 +95,22 @@ body {
 .login-nav__item a:hover:after,
 .login-nav__item.active a:after{
 	background-color: rgb(17, 97, 237);
-	height: 2px;
+	height: 4px;
 	right: 0;
-	bottom: 2px;
+	bottom: -4px;
 	border-radius: 0;
 	transition: .20s all ease;
 }
 .login__label {
 	display: block;
-	padding-left: 1rem;
+	padding-left: 0;
 }
 
 .login__label,
 .login__label--checkbox {
-	color: rgba(255, 255, 255, 0.5);
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	font-size: .75rem;
-	margin-bottom: 1rem;
 }
 
 .login__label--checkbox {

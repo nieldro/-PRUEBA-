@@ -50,12 +50,12 @@
   .navbar-toggle{
     display: none;
   }
-  @media (max-width: 580px){
+  @media (max-width: 780px){
     .navbar-toggle{
       display: block;
       position: fixed;
-      top: 5%;
-      right: 10%;
+      top: 6%;
+      left: 3%;
       transform: translateX(100%);
       z-index: 9999999999;
     }
@@ -70,6 +70,11 @@
       padding: 20px !important;
       overflow: visible !important;
     }
+
+    h2.section-name{
+      font-size: 16px;
+    }
+   
   }
   
 

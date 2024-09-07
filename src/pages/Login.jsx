@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
-import './Login.css';
 
 const Login = ({ history }) => {
     const [email, setEmail] = useState('');
