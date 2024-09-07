@@ -1,0 +1,182 @@
+/* Ajustar la posición para evitar que la sección se oculte bajo el menú superior */
+.home-container {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin-top: 1700px; /* Ajustado para mover el contenido hacia abajo */
+  box-sizing: border-box; /* Incluye padding en el ancho total */
+}
+
+/* Otros estilos permanecen igual */
+.dashboard-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* My Cards Section */
+.my-cards-section {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card-item {
+  background: linear-gradient(to right, #00aaff, #ffffff); /* Degradado azul a blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-item h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff; /* Texto blanco para contrastar con el fondo azul */
+}
+
+.card-item p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #fff; /* Texto blanco para contrastar con el fondo azul */
+}
+
+/* Recent Transactions Section */
+.recent-transactions {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-transactions h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.transaction:last-child {
+  border-bottom: none;
+}
+
+.transaction-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.transaction-amount {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.transaction-amount p {
+  margin-left: 5px;
+}
+
+/* Charts Section */
+.charts-section {
+  display: flex;
+  gap: 20px;
+}
+
+.weekly-activity, .expense-statistics {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.weekly-activity h3, .expense-statistics h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Quick Transfer Section */
+.quick-transfer {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quick-transfer h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.transfer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.transfer-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.transfer-info p {
+  margin: 0;
+}
+
+.transfer-amount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.transfer-amount input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  flex: 1;
+}
+
+.transfer-amount button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Balance History Section */
+.balance-history {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.balance-history h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

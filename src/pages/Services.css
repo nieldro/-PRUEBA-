@@ -1,0 +1,88 @@
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animación del botón al hacer hover */
+  @keyframes buttonGlow {
+    from {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    to {
+      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.6);
+    }
+  }
+  
+  /* Contenedor principal */
+  .services-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #f0f4f8;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 170px; /* Ajustado para mover el contenido hacia abajo */
+  }
+  
+  /* Título principal */
+  .services-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Select */
+  .service-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .service-select:hover {
+    border-color: #0056b3;
+  }
+  
+  /* Botón de solicitar servicio */
+  .service-button {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .service-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    animation: buttonGlow 0.5s infinite alternate;
+  }
+  
+  .service-button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Mensaje de alerta visual */
+  .alert-message {
+    padding: 10px;
+    background-color: #62ec11;
+    color: #054610;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  

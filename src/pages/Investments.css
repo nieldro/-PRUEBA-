@@ -1,0 +1,81 @@
+/* Investments.css */
+.investments-container {
+    background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Degradado de fondo atractivo */
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 700px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición al hacer hover */
+  }
+  
+  .investments-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3); /* Crece y se hace más intenso al pasar el mouse */
+  }
+  
+  .investments-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para el título */
+  }
+  
+  .investments-balance {
+    font-size: 24px;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Animación de entrada */
+  }
+  
+  .investments-button {
+    background-color: #ff7b54; /* Color atractivo para el botón */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra en los botones */
+  }
+  
+  .investments-button:hover {
+    background-color: #e0653b;
+    transform: translateY(-3px); /* Efecto flotante al hacer hover */
+  }
+  
+  .investments-button:active {
+    transform: translateY(1px);
+  }
+  
+  .investments-chart {
+    margin-top: 30px;
+    animation: fadeInUp 1s ease; /* Animación de entrada del gráfico */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

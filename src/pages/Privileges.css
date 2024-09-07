@@ -1,0 +1,75 @@
+/* Animación de desvanecido */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Contenedor principal */
+  .privileges-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título principal */
+  .privileges-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Caja de cada privilegio */
+  .privilege-box {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .privilege-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Label de privilegio */
+  .privilege-label {
+    font-size: 1.2em;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  /* Estilo de checkbox */
+  .privilege-checkbox input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Animación de color al activar privilegio */
+  @keyframes activeGlow {
+    from {
+      background-color: #fff;
+    }
+    to {
+      background-color: rgba(76, 175, 80, 0.1);
+    }
+  }
+  
+  .active-privilege {
+    animation: activeGlow 0.5s forwards;
+  }
+  

@@ -1,0 +1,106 @@
+/* Fondo y fuente general */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal del perfil */
+  .profile-container {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto de hover para dar dinamismo */
+  .profile-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Título del perfil */
+  .profile-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Estilo de los textos de email y contraseña */
+  .profile-details p {
+    font-size: 1.1rem;
+    color: #555;
+    padding: 0.75rem 1rem;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-details p:hover {
+    background-color: #f0f4f8;
+  }
+  
+  /* Icono de perfil circular */
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f0f4f8;
+    background-image: url('https://randomuser.me/api/portraits/women/44.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 1.5rem auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .profile-avatar:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Botón de editar perfil */
+  .profile-edit-btn {
+    display: block;
+    margin: 2rem auto 0 auto;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #1161ee;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .profile-edit-btn:hover {
+    background-color: #0a50d6;
+    transform: translateY(-3px);
+  }
+  
+  /* Fondo difuminado para darle profundidad */
+  .profile-container:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    bottom: -20px;
+    left: -20px;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    z-index: -1;
+    filter: blur(30px);
+  }
+  

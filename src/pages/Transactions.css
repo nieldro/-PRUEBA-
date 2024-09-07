@@ -1,0 +1,133 @@
+/* Animación de desvanecido al cargar */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Contenedor principal */
+  .transactions-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #f5f7fa;
+    min-height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 200px; /* Ajustado para mover el contenido hacia abajo */
+  }
+  
+  /* Título de la página */
+  .transactions-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilo del input de filtro */
+  .transactions-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .transactions-container input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+  }
+  
+  /* Lista de transacciones */
+  .transactions-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .transactions-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .transactions-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Tipo de transacción */
+  .transaction-type {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  /* Monto de la transacción */
+  .transaction-amount {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Fecha de la transacción */
+  .transaction-date {
+    color: #999;
+  }
+  
+  /* Contenedor del gráfico */
+  .chart-container {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Gráfico SVG */
+  .chart {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 250px;
+  }
+  
+  .circle-progress {
+    stroke: #4caf50;
+    stroke-width: 10;
+    fill: transparent;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1s ease;
+  }
+  
+  .circle-background {
+    stroke: #ddd;
+    stroke-width: 10;
+    fill: transparent;
+  }
+  
+  @keyframes drawCircle {
+    from {
+      stroke-dashoffset: 440;
+    }
+    to {
+      stroke-dashoffset: 110;
+    }
+  }
+  
+  .animate-circle {
+    animation: drawCircle 2s forwards;
+  }
+  

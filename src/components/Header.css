@@ -1,0 +1,96 @@
+/* Estilos generales */
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Asegura que el menú se posicione relativamente a este contenedor */
+  }
+  
+  .section-name {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-icon {
+    margin-right: 10px;
+    color: #888;
+  }
+  
+  .search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .icons-container {
+    display: flex;
+    align-items: center;
+    position: relative; /* Necesario para el menú desplegable */
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  
+  /* Estilos del menú desplegable */
+  .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    visibility: hidden;
+    z-index: 1000; /* Asegura que el menú esté por encima del contenido */
+  }
+  
+  .dropdown-menu.show {
+    opacity: 1;
+    transform: scaleY(1);
+    visibility: visible;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.2s ease;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  

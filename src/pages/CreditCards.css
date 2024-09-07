@@ -1,0 +1,93 @@
+/* Animación de entrada para las tarjetas */
+@keyframes cardSlideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Efecto de rotación 3D al hacer hover */
+  @keyframes cardFlip {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(180deg);
+    }
+  }
+  
+  /* Contenedor de las tarjetas en columna */
+  .credit-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    animation: fadeIn 1s ease-in-out;
+    gap: 20px; /* Espaciado entre las tarjetas */
+  }
+  
+  /* Estilo de cada tarjeta */
+  .card {
+    width: 300px;
+    height: 180px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    transition: transform 0.6s ease;
+    animation: cardSlideIn 0.6s ease-in-out;
+  }
+  
+  /* Estilo para tarjetas negras */
+  .card.black-card {
+    background-color: #333;
+  }
+  
+  /* Efecto hover para rotación 3D */
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+  
+  /* Información de la tarjeta */
+  .card-number {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+  }
+  
+  .card-balance {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffc107;
+  }
+  
+  /* Estilo del nombre del titular */
+  .card-holder {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Estilo del logo de la tarjeta */
+  .card-logo {
+    font-size: 1.5em;
+    align-self: flex-end;
+  }
+  
+  /* Simulación de chip de tarjeta */
+  .card-chip {
+    width: 40px;
+    height: 30px;
+    background-color: #d4af37;
+    border-radius: 5px;
+  }
+  
